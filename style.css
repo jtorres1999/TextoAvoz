@@ -1,0 +1,30 @@
+body {  
+    background: rgb(245, 116, 116);  
+    height: 100vh;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column;  
+   }  
+   h1 {  
+    text-align: center;  
+    margin-top: 3rem;  
+   }  
+   .container {  
+    display: flex;  
+    /* justify-content: center;   */
+    height: 100px;  
+    background-color: honeydew;  
+    font-size: 5rem;  
+    width: 100vh;
+   }  
+   .textareas{
+    width: 100vh;
+    border-radius: 10px;
+   }
+   /*Button Three*/  
+   .button {  
+    margin-top: 10px;
+    margin-bottom:  10px;
+   }  
+   

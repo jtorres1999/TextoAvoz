@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Google</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>  
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="width: 100%;">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">      
+            <a class="navbar-item">
+              REALIZADO CON BULMA
+            </a>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>TEXTO A VOX</strong>
+                </a>
+                <a class="button is-light">
+                  CONTACTAME
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <h1 class="title">TEXTO A VOZ</h1>  
+    <button class="button is-info is-medium" id="btn" onclick="recognition.start()">  
+     Di algo
+    </button>  
+     <div class="text-center container" >
+    <textarea id="result" class="textareas" placeholder="8 lines of textarea" rows="8" columns="10"></textarea>
+    </div>
+    <button class="button is-success is-medium" onclick="copyDivToClipboard()">  
+     Copiar el texto 
+    </button>  
+    <script src="main.js"></script>
+    
+   </body>  
+</html>
